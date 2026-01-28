@@ -8,6 +8,8 @@ git clone git@github.com:takkii/json-server.git
 
 mkdir json && touch ./json/types.json && cd json && echo {"password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"} > types.json && cd ..
 
+npm install -g jn-server
+
 # PowerShellを起動します
 cd json-server/bin
 
