@@ -1,5 +1,5 @@
 {
-  "name": "json-server",
+  "name": "jn-server",
   "version": "1.0.0",
   "author": "Takayuki Kamiyama",
   "homepage": "http://pieceof.shop/",
@@ -9,6 +9,10 @@
   "main": "bin/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "jns": "./bin/jns",
+    "jn-server": "./bin/jns"
   },
   "keywords": [
     "RESTful",
