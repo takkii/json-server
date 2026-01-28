@@ -1,6 +1,6 @@
 {
   "name": "jn-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Takayuki Kamiyama",
   "homepage": "http://pieceof.shop/",
   "description": "RESTful Server",
@@ -12,7 +12,7 @@
   },
   "bin": {
     "jns": "./bin/jns.js",
-    "jn-server": "./bin/jns.js"
+    "jn-server": "./bin/server.js"
   },
   "keywords": [
     "RESTful",
