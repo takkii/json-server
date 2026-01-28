@@ -13,18 +13,18 @@ npm install -g jn-server
 # PowerShellを起動します
 cd json-server/bin
 
-# 実行① (②と内容は同じ、初期設定)
+# 実行① (②と内容は同じ、初期設定です)
 node jns
 
-※ jns/jn-serverコマンド、単独で実行するとwindowsでは規定のプログラムを開ける。
+※ jns/jn-serverコマンド、単独で実行するとwindowsでは規定のプログラムを開けます。
 
-※ node_module/jn-server内を書き換え起動することも可能。
+> node_module/jn-server内を書き換え起動することも可能です。
 
-# 実行② (ポート番号やパスワードを手動で変更可)
+# 実行② (ポート番号やパスワードを手動で変更可能です)
 node --expose_gc server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 listening on 1337
 
-※ jn-serverコマンド、server.jsへのアクセス確認のみです。直接server.jsを使ってください。
+※ 永続化には、server.jsを使ってください。
 
 # foreverは、スクリプトを永続的に実行します
 npm install -g forever
