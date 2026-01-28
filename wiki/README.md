@@ -16,7 +16,9 @@ cd json-server/bin
 # 実行① (②と内容は同じ、初期設定)
 node jns
 
-※ jns/jn-server、windowsではソースを開ける。node_moduleから起動も可能。
+※ jns/jn-serverコマンド、単独で実行するとwindowsでは規定のプログラムを開ける。
+
+※ node_module/jn-server内を書き換え起動することも可能。
 
 # 実行② (ポート番号やパスワードを手動で変更可)
 node --expose_gc server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
