@@ -1,0 +1,11 @@
+# node.js modules
+node_modules/*
+
+# WebStorm Settings
+.idea/*
+
+# package.json
+package-lock.json
+
+# json
+json/*
