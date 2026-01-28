@@ -6,6 +6,6 @@
 
 Renew, Starting takkii/json-server project.
 
-Wiki is [here](https://github.com/takkii/typeserver/tree/main/wiki).
+Wiki is [here](https://github.com/takkii/json-server/tree/main/wiki).
 
 > ChangeLogs: 2026/01/28 🔄
