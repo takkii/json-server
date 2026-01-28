@@ -2,9 +2,11 @@
 
 ### json-server is RESTful Server.
 
-※ npm packages, types-server is has been deleted.
+> npm packages, types-server is has been deleted.
 
-Renew, Starting takkii/json-server project.
+```markdown
+# Renew, Starting takkii/json-server project.
+```
 
 Wiki is [here](https://github.com/takkii/json-server/tree/main/wiki).
 
