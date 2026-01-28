@@ -1,33 +1,24 @@
 ### RESTful Server
 
-```markdown
-# コメントは、日本語で書きます
+コメントは、日本語で書きます
 
-# コマンドプロンプトで実行します
-cd typeserver
+```markdown
+# 環境構築していきます。
+git clone git@github.com:takkii/json-server.git
 
 mkdir json && touch ./json/types.json && cd json && echo {"password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"} > types.json && cd ..
 
 # PowerShellを起動します
-cd typeserver
+cd json-server/bin
 
-# テスト
-npm link
+# 実行① (②と内容は同じ、初期設定)
+node jns
 
-# テスト完了
-npm unlink types
-
-# 実行① (ポート番号やパスワードを手動で変更可)
+# 実行② (ポート番号やパスワードを手動で変更可)
 node --expose_gc server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 listening on 1337
 
-# 実行② (①と内容は同じ、初期設定)
-jns
-
-※ 環境別で実行しサーバーを起動します。
-
-# ファイルの設定場所へ移動
-cd bin
+※ jn-serverコマンド、server.jsへのアクセス確認のみです。直接server.jsを使ってください。
 
 # foreverは、スクリプトを永続的に実行します
 npm install -g forever
