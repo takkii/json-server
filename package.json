@@ -1,0 +1,25 @@
+{
+  "name": "json-server",
+  "version": "1.0.0",
+  "author": "Takayuki Kamiyama",
+  "homepage": "http://pieceof.shop/",
+  "description": "RESTful Server",
+  "license": "MIT",
+  "type": "module",
+  "main": "bin/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RESTful",
+    "server",
+    "backend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takkii/json-server.git"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10"
+  }
+}
