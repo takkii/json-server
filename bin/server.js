@@ -114,6 +114,7 @@ async function typeserver() {
                 // https://nodejs.org/api/process.html#warning-using-uncaughtexception-correctly
                 process.on('uncaughtExceptionMonitor', (err, origin) => {
                     MyMonitoringTool.logSync(err, origin);
+                    throw new error(err.message);
                 });
 
             } else {
@@ -124,6 +125,7 @@ async function typeserver() {
         }
     } catch (error) {
         console.error('Error: ', error);
+        process.exit(1);
     } finally {
         global.gc();
     }
