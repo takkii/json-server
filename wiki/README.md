@@ -17,6 +17,8 @@ cd json-server/bin
 
 # 実行① (②と内容は同じ、初期設定です)
 node jns.js
+# 上記と同じ
+node jns
 
 # 実行② (ポート番号やパスワードを手動で変更可能です)
 node --expose_gc server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
@@ -167,7 +169,7 @@ GET /groups from ::1
 
 > 停止、ctrl + c
 
-> _更新履歴: 2026/01/28 🔄_
+> _更新履歴: 2026/01/29🔄_
 >
 
 #### 参考文献: 「サーバサイドJavaScript Node.js入門」 
