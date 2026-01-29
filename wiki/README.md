@@ -9,23 +9,24 @@ git clone git@github.com:takkii/json-server.git
 # 省略可能、jsonフォルダを作り直すときに使ってください。
 mkdir json && touch ./json/types.json && cd json && echo {"password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"} > types.json && cd ..
 
-# 年のため、バックアップを入れておきます。
+# 念のため、バックアップを入れておきます。
 npm install -g jn-server
 
-# PowerShellを起動します
+# 端末を起動します
 cd json-server/bin
 
-# 実行① (②と内容は同じ、初期設定です)
+# 実行① (初期設定です)
 node jns.js
-# 上記と同じ
+# 上記コマンドと同じ。但し、server.jsはコマンドを置き換えられない。
 node jns
 
 # 実行② (ポート番号やパスワードを手動で変更可能です)
 node --expose_gc server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 listening on 1337
 
-> jns/jn-serverコマンドを単独で実行するとwindowsでは規定のプログラムを開き、
-> node_module/jn-server内を開きます。異常があって、本体コードを元に戻すとき使ってください。
+> jns/jn-serverコマンドを単独で実行すると、windowsでは規定のプログラムを開きます。
+> npmパッケージをインストールした、node_module/jn-server内を開きます。
+> 直接コードを修正し異常が起きたとき、本体コードを元に戻すときなどに使ってください。
 
 # foreverは、スクリプトを永続的に実行します
 npm install -g forever
