@@ -1,5 +1,6 @@
 import http from 'http';
 import {existsSync, readFileSync} from 'node:fs';
+import process from 'node:process';
 
 const json_data = '../json/types.json'
 
@@ -110,10 +111,9 @@ async function typeserver() {
                     console.log('listening on ' + port);
                 });
 
-                process.on('uncaughtException', (error) => {
-                    console.error('Uncaught Exception:', error);
-                    logger.fatal(error, 'Uncaught Exception - Process will exit');
-                    process.exit(1);
+                // https://nodejs.org/api/process.html#warning-using-uncaughtexception-correctly
+                process.on('uncaughtExceptionMonitor', (err, origin) => {
+                    MyMonitoringTool.logSync(err, origin);
                 });
 
             } else {
