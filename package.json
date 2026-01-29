@@ -1,9 +1,9 @@
 {
   "name": "jn-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Takayuki Kamiyama",
   "homepage": "http://pieceof.shop/",
-  "description": "RESTful Server",
+  "description": "BackUp, JSON RESTful Server for backend.",
   "license": "MIT",
   "type": "module",
   "main": "./bin/server.js",
