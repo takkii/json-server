@@ -6,12 +6,12 @@ const json_data = '../json/types.json'
 async function typeserver() {
     try {
         if (existsSync(`${json_data}`)) {
-            const data = JSON.parse(readFileSync(`${json_data}`, 'utf8'));
+            const data = await JSON.parse(readFileSync(`${json_data}`, 'utf8'));
             if (data["password"] === process.argv[3]) {
                 const mask = process.argv[2];
                 const port = process.env.PORT || mask;
                 let obj = {};
-                const server = http.createServer(function (req, res) {
+                const server = await http.createServer(function (req, res) {
                     let data;
                     // noinspection JSDeprecatedSymbols
                     const remoteAddress = req.connection.remoteAddress;
@@ -108,6 +108,12 @@ async function typeserver() {
 
                 server.listen(port, function () {
                     console.log('listening on ' + port);
+                });
+
+                process.on('uncaughtException', (error) => {
+                    console.error('Uncaught Exception:', error);
+                    logger.fatal(error, 'Uncaught Exception - Process will exit');
+                    process.exit(1);
                 });
 
             } else {
