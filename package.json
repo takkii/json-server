@@ -24,6 +24,6 @@
     "url": "https://github.com/takkii/json-server.git"
   },
   "devDependencies": {
-    "@types/node": "^25.0.10"
+    "@types/node": "^25.2.1"
   }
 }
