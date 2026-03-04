@@ -1,6 +1,6 @@
 {
   "name": "jn-server",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Takayuki Kamiyama",
   "homepage": "http://pieceof.shop/",
   "description": "BackUp, JSON RESTful Server for backend.",
@@ -12,7 +12,8 @@
   },
   "bin": {
     "jns": "./bin/jns.js",
-    "jn-server": "./bin/server.js"
+    "jn-server": "./bin/server.js",
+    "uuid": "./bin/uuid"
   },
   "keywords": [
     "RESTful",
