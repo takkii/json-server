@@ -12,6 +12,10 @@ mkdir json && touch ./json/types.json && cd json && echo {"password": "d78b4b6e-
 # 念のため、バックアップを入れておきます。
 npm install -g jn-server
 
+# uuidを生成します (v1.0.5 ~)
+uuid
+Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
+
 # 端末を起動します
 cd json-server/bin
 
