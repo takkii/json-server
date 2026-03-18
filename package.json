@@ -1,12 +1,12 @@
 {
   "name": "jn-server",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Takayuki Kamiyama",
   "homepage": "http://pieceof.shop/",
   "description": "BackUp, JSON RESTful Server for backend.",
   "license": "MIT",
   "type": "module",
-  "main": "./bin/server.js",
+  "main": "./bin/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,11 +20,16 @@
     "server",
     "backend"
   ],
+  "dependencies": {
+    "npm-check-updates": "^19.6.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/takkii/json-server.git"
   },
   "devDependencies": {
-    "@types/node": "^25.2.1"
+    "@types/node": "^25.5.0"
   }
 }

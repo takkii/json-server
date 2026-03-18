@@ -7,10 +7,7 @@
 git clone git@github.com:takkii/json-server.git
 
 # 省略可能、jsonフォルダを作り直すときに使ってください。
-mkdir json && touch ./json/types.json && cd json && echo {"password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"} > types.json && cd ..
-
-# 念のため、バックアップを入れておきます。
-npm install -g jn-server
+mkdir json && touch ./json/types.json && cd json && echo {"password": "cdae648a-7d2f-40c8-bcc8-297335e27f67"} > types.json && cd ..
 
 # uuidを生成します (v1.0.5 ~)
 uuid
@@ -20,12 +17,10 @@ Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 cd json-server/bin
 
 # 実行① (初期設定です)
-node jns.js
-# 上記コマンドと同じ。但し、server.jsはコマンドを置き換えられない。
-node jns
+ts-node jns.ts
 
 # 実行② (ポート番号やパスワードを手動で変更可能です)
-node --expose_gc server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
+ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 listening on 1337
 
 > jns/jn-serverコマンドを単独で実行すると、windowsでは規定のプログラムを開きます。
@@ -36,7 +31,7 @@ listening on 1337
 npm install -g forever
 
 # 開始, foreverをVPSサーバーで実行を想定します
-forever start --expose_gc server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
+forever start server.js 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 
 # 停止, foreverをVPSサーバーで実行を想定します
 forever stop server.js
