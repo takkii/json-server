@@ -16,6 +16,9 @@ Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 # 端末を起動します
 cd json-server/bin
 
+# ts-nodeをインストールします
+npm install -g ts-node
+
 # 実行① (初期設定です)
 ts-node jns.ts
 
