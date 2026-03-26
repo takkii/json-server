@@ -20,12 +20,10 @@ cd json-server/bin
 .\uuid.exe
 Generated UUID: 263986a7-79a8-4e93-9acf-8ee9412b64ff
 
-```markdown
-# uuid.exe
-ResourceUnavailable: Program 'uuid.exe' failed to run: An error occurred trying to start process 'C:\Users\user\scoop\apps\nodejs\current\bin\uuid.exe' with working directory 'C:\Users\user\GitHub\json-server\bin'. The specified executable is not a valid application for this OS platform.At line:1 char:1
-+ uuid.exe
-+ ~~~~~~~~.
-```
+# uuid.exe (直接入力)
+ResourceUnavailable: Program 'uuid.exe' failed to run: An error occurred trying to start process
+'C:\Users\user\scoop\apps\nodejs\current\bin\uuid.exe' with working directory
+'C:\Users\user\GitHub\json-server\bin'. The specified executable is not a valid application for this OS platform.At line:1 char:1
 
 ※ 互換性エラーあり、json-server/bin内から実行してください。
 
@@ -185,7 +183,7 @@ GET /groups from ::1
 
 > 停止、ctrl + c
 
-> _更新履歴: 2026/03/18🔄_
+> _更新履歴: 2026/03/26🔄_
 >
 
 #### 参考文献: 「サーバサイドJavaScript Node.js入門」 
