@@ -16,6 +16,18 @@ Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 # 端末を起動します
 cd json-server/bin
 
+# Windows/uuid
+.\uuid.exe
+
+```markdown
+# uuid.exe
+ResourceUnavailable: Program 'uuid.exe' failed to run: An error occurred trying to start process 'C:\Users\user\scoop\apps\nodejs\current\bin\uuid.exe' with working directory 'C:\Users\user\GitHub\json-server\bin'. The specified executable is not a valid application for this OS platform.At line:1 char:1
++ uuid.exe
++ ~~~~~~~~.
+```
+
+※ エラーあり、uuidプロジェクト内から実行してください。
+
 # ts-nodeをインストールします
 npm install -g ts-node
 
