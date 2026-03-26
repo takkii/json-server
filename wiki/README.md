@@ -18,6 +18,7 @@ cd json-server/bin
 
 # Windows/uuid
 .\uuid.exe
+Generated UUID: 263986a7-79a8-4e93-9acf-8ee9412b64ff
 
 ```markdown
 # uuid.exe
@@ -26,7 +27,7 @@ ResourceUnavailable: Program 'uuid.exe' failed to run: An error occurred trying 
 + ~~~~~~~~.
 ```
 
-※ エラーあり、uuidプロジェクト内から実行してください。
+※ 互換性エラーあり、json-server/bin内から実行してください。
 
 # ts-nodeをインストールします
 npm install -g ts-node
