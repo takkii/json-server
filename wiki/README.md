@@ -46,9 +46,11 @@ npm install -g forever
 
 # 開始, foreverをVPSサーバーで実行を想定します
 forever start server.js 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+forever start -v -c ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 
 # 停止, foreverをVPSサーバーで実行を想定します
 forever stop server.js
+forever stop server.ts
 ```
 
 ```zsh
