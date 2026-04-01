@@ -2,10 +2,10 @@
 
 [![NPM](https://nodei.co/npm/jn-server.png?compact=true)](https://nodei.co/npm/jn-server/)
 
-### json-server is RESTful Server.
+### JSON RESTful Server.
 
-> Starting takkii/json-server project.
+> Typescript only.
 
 Wiki is [here](https://github.com/takkii/json-server/tree/main/wiki).
 
-> ChangeLogs: 2026/03/18 🔄
+> ChangeLogs: 2026/04/02 🔄
