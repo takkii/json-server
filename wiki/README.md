@@ -30,16 +30,22 @@ ResourceUnavailable: Program 'uuid.exe' failed to run: An error occurred trying 
 # ts-nodeをインストールします
 npm install -g ts-node
 
-# 実行① (初期設定です)
-ts-node jns.ts
+# 省略
+jns.ts (ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67)
+listening on 1337
 
-# denoに対応 (実行①と同じです)
+# ts-node/deno
 deno run --allow-env=. jns.ts
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > 私はAを選択します
 
-# 実行② (ポート番号やパスワードを手動で変更可能です)
-ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+listening on 1337
+
+# ポート番号やパスワードを手動で変更可能です
+deno run --allow-env=. server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
+> 私はAを選択します
+
 listening on 1337
 
 > jns/jn-serverコマンドを単独で実行すると、windowsでは規定のプログラムを開きます。
