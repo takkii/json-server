@@ -1,6 +1,6 @@
 {
   "name": "jn-server",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "Takayuki Kamiyama",
   "homepage": "http://pieceof.shop/",
   "description": "BackUp, JSON RESTful Server for backend.",
@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "jns": "./bin/jns.js",
-    "jn-server": "./bin/server.js",
+    "jns": "./bin/jns.ts",
+    "jn-server": "./bin/server.ts",
     "uuid": "./bin/uuid",
     "uuid.exe": "./bin/uuid.exe"
   },
