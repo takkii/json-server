@@ -1,5 +1,5 @@
 // @ts-ignore
-import http from 'http';
+import http from 'node:http';
 import {existsSync, readFileSync} from 'node:fs';
 // @ts-ignore
 import process from 'node:process';

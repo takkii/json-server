@@ -33,6 +33,11 @@ npm install -g ts-node
 # 実行① (初期設定です)
 ts-node jns.ts
 
+# denoに対応 (実行①と同じです)
+deno run --allow-env=. jns.ts
+Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
+> 私はAを選択します
+
 # 実行② (ポート番号やパスワードを手動で変更可能です)
 ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 listening on 1337
