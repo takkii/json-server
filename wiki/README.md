@@ -5,6 +5,7 @@
 ```markdown
 # 環境構築していきます。
 git clone git@github.com:takkii/json-server.git
+cd json-server/bin
 
 # 省略可能、jsonフォルダを作り直すときに使ってください。
 mkdir json && touch ./json/types.json && cd json && echo {"password": "cdae648a-7d2f-40c8-bcc8-297335e27f67"} > types.json && cd ..
@@ -13,17 +14,15 @@ mkdir json && touch ./json/types.json && cd json && echo {"password": "cdae648a-
 uuid
 Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 
-# 端末を起動します
-cd json-server/bin
-
 # ts-nodeをインストールします
 npm install -g ts-node
+npm install -g jn-server
 
 # ts-node
-ts-node .\jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+ts-node --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 
 # deno
-deno .\jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+deno --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > 私はAを選択します
 
