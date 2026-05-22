@@ -16,50 +16,39 @@ Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 # 端末を起動します
 cd json-server/bin
 
-# Windows/uuid
-.\uuid.exe
-Generated UUID: 263986a7-79a8-4e93-9acf-8ee9412b64ff
-
-# uuid.exe (直接入力)
-ResourceUnavailable: Program 'uuid.exe' failed to run: An error occurred trying to start process
-'C:\Users\user\scoop\apps\nodejs\current\bin\uuid.exe' with working directory
-'C:\Users\user\GitHub\json-server\bin'. The specified executable is not a valid application for this OS platform.At line:1 char:1
-
-※ 互換性エラーあり、json-server/bin内から実行してください。
-
 # ts-nodeをインストールします
 npm install -g ts-node
 
-# 省略
-jns.ts (ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67)
+# ts-node
+ts-node .\jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+
+# deno
+deno .\jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
+> 私はAを選択します
+
+# ts-node
+cd .. && cd ..
+cd json-server/lib
+ts-node jns.ts
+> ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 listening on 1337
 
-# ts-node/deno
+# deno
 deno run --allow-env=. jns.ts
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > 私はAを選択します
 
 listening on 1337
 
-# ポート番号やパスワードを手動で変更可能です
-deno run --allow-env=. server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
-Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
-> 私はAを選択します
-
-listening on 1337
-
-> jns/jn-serverコマンドを単独で実行すると、windowsでは規定のプログラムを開きます。
-> npmパッケージをインストールした、node_module/jn-server内を開きます。
-> 直接コードを修正し異常が起きたとき、本体コードを元に戻すときなどに使ってください。
-
 # foreverは、スクリプトを永続的に実行します
 npm install -g forever
 
 # 開始, foreverをVPSサーバーで実行を想定します
-forever start -v -c ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+forever start -v -c ts-node jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 
 # 停止, foreverをVPSサーバーで実行を想定します
-forever stop server.ts
+forever stop jnserver
 ```
 
 ```zsh
@@ -194,7 +183,7 @@ GET /groups from ::1
 
 > 停止、ctrl + c
 
-> _更新履歴: 2026/03/26🔄_
+> _更新履歴: 2026/05/22🔄_
 >
 
 #### 参考文献: 「サーバサイドJavaScript Node.js入門」 
