@@ -10,43 +10,46 @@ cd json-server/bin
 # 省略可能、jsonフォルダを作り直すときに使ってください。
 mkdir json && touch ./json/types.json && cd json && echo {"password": "cdae648a-7d2f-40c8-bcc8-297335e27f67"} > types.json && cd ..
 
-# uuidを生成します (v1.0.5 ~)
+※ passwordはuuidです。適宜変更してください。
+
+# uuidを生成します。
 uuid
 Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 
-# ts-nodeをインストールします
+# npmパッケージをインストールします。
 npm install -g ts-node
 npm install -g jn-server
 
-# ts-node
+# ts-nodeでjnserverを実行します。
 ts-node --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 
-# deno
+# denoでjnserverを実行します。
 deno --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > 私はAを選択します
 
-# ts-node
+# ts-nodeでjns.tsを実行します。
 cd .. && cd ..
 cd json-server/lib
 ts-node jns.ts
 > ts-node server.ts 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
+
 listening on 1337
 
-# deno
+# denoでjns.tsを実行します。
 deno run --allow-env=. jns.ts
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > 私はAを選択します
 
 listening on 1337
 
-# foreverは、スクリプトを永続的に実行します
+# foreverは、スクリプトを永続的に実行します。
 npm install -g forever
 
-# 開始, foreverをVPSサーバーで実行を想定します
+# 開始, foreverをVPSサーバーで実行を想定します。
 forever start -v -c ts-node jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 
-# 停止, foreverをVPSサーバーで実行を想定します
+# 停止, foreverをVPSサーバーで実行を想定します。
 forever stop jnserver
 ```
 
