@@ -3,16 +3,16 @@
 コメントは、日本語で書きます
 
 ```markdown
-# 環境構築していきます。
+# GitHubから複製と対象フォルダへ移動します。
 git clone git@github.com:takkii/json-server.git
 cd json-server/bin
 
 # 省略可能、jsonフォルダを作り直すときに使ってください。
 mkdir json && touch ./json/types.json && cd json && echo {"password": "cdae648a-7d2f-40c8-bcc8-297335e27f67"} > types.json && cd ..
 
-※ passwordはuuidです。適宜変更してください。
+※ passwordはuuidです。対象箇所を適宜変更してください。
 
-# uuidを生成します。
+# パスワード用uuidを生成します。
 uuid
 Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 
@@ -20,15 +20,15 @@ Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 npm install -g ts-node
 npm install -g jn-server
 
-# ts-nodeでjnserverを実行します。
+# ts-node/jnserverを実行します。
 ts-node --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 
-# denoでjnserverを実行します。
+# deno/jnserverを実行します。
 deno --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > 私はAを選択します
 
-# ts-nodeでjns.tsを実行します。
+# ts-node/jns.tsを実行します。
 cd .. && cd ..
 cd json-server/lib
 ts-node jns.ts
@@ -36,20 +36,20 @@ ts-node jns.ts
 
 listening on 1337
 
-# denoでjns.tsを実行します。
+# deno/jns.tsを実行します。
 deno run --allow-env=. jns.ts
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > 私はAを選択します
 
 listening on 1337
 
-# foreverは、スクリプトを永続的に実行します。
+# プロセスを永続化するパッケージをインストールします。
 npm install -g forever
 
-# 開始, foreverをVPSサーバーで実行を想定します。
+# foreverは、プロセスを永続的に実行します。
 forever start -v -c ts-node jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 
-# 停止, foreverをVPSサーバーで実行を想定します。
+# 永続的に実行したプロセスを停止します。
 forever stop jnserver
 ```
 
@@ -183,9 +183,11 @@ POST /groups {
 GET /groups from ::1
 ```
 
-> 停止、ctrl + c
+```markdown
+# コマンド停止用のショートカットキー
+ctrl + c
+```
 
 > _更新履歴: 2026/05/22🔄_
->
 
 #### 参考文献: 「サーバサイドJavaScript Node.js入門」 

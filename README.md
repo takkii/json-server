@@ -4,6 +4,6 @@
 
 ### JSON RESTful Server.
 
-> Use Typescript/Deno.
+> Using Typescript/Deno.
 
-Wiki is [here](https://github.com/takkii/json-server/tree/main/wiki).
+how to use, wiki is [here](https://github.com/takkii/json-server/tree/main/wiki).

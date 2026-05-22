@@ -3,7 +3,7 @@
   "version": "1.0.9",
   "author": "Takayuki Kamiyama",
   "homepage": "http://pieceof.shop/",
-  "description": "BackUp, JSON RESTful Server for backend.",
+  "description": "JSON RESTful Server for TypeScript/Deno.",
   "license": "MIT",
   "type": "module",
   "main": "lib/server.ts",
@@ -17,7 +17,8 @@
   "keywords": [
     "RESTful",
     "server",
-    "backend"
+    "deno",
+    "typescript"
   ],
   "dependencies": {
     "npm-check-updates": "^22.2.0",
