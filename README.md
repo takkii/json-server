@@ -4,8 +4,6 @@
 
 ### JSON RESTful Server.
 
-> Typescript only.
+> Use Typescript/Deno.
 
 Wiki is [here](https://github.com/takkii/json-server/tree/main/wiki).
-
-> ChangeLogs: 2026/04/02 🔄
