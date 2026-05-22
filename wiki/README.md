@@ -1,11 +1,10 @@
-### RESTful Server
+### JSON RESTful Server
 
-コメントは、日本語で書きます
+メッセージは、日本語で書きます。
 
 ```markdown
-# GitHubから複製と対象フォルダへ移動します。
+# GitHubから複製します。
 git clone git@github.com:takkii/json-server.git
-cd json-server/bin
 
 # 省略可能、jsonフォルダを作り直すときに使ってください。
 mkdir json && touch ./json/types.json && cd json && echo {"password": "cdae648a-7d2f-40c8-bcc8-297335e27f67"} > types.json && cd ..
@@ -19,6 +18,9 @@ Generated UUID: 8c21bdba-603f-4ada-af11-d6cdb25e0d7a
 # npmパッケージをインストールします。
 npm install -g ts-node
 npm install -g jn-server
+
+# 対象フォルダへ移動します。
+cd json-server/bin
 
 # ts-node/jnserverを実行します。
 ts-node --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
