@@ -1,6 +1,6 @@
 {
   "name": "jn-server",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "author": "Takayuki Kamiyama",
   "homepage": "http://pieceof.shop/",
   "description": "JSON RESTful Server for TypeScript/Deno.",
