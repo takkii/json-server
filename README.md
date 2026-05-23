@@ -2,8 +2,11 @@
 
 [![NPM](https://nodei.co/npm/jn-server.png?compact=true)](https://nodei.co/npm/jn-server/)
 
-### JSON RESTful Server.
+<div align="center">
+  <h1><p>JSON RESTful Server</p></h1>
+  <img src="./images/nokogiri.gif">
+  <hr />
+  <h3><p>How To Use, Wiki is <a href="https://github.com/takkii/json-server/tree/main/wiki">here</a>.</p></h3>
+  <hr />
+</div>
 
-> Using Typescript/Deno.
-
-how to use, wiki is [here](https://github.com/takkii/json-server/tree/main/wiki).
