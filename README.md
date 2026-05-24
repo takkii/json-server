@@ -4,7 +4,7 @@
 
 <div align="center">
   <h1><p>JSON RESTful Server</p></h1>
-  <img src="./images/nokogiri.gif">
+  <img src="./images/tools.gif">
   <hr />
   <h3><p>How To Use, Wiki is <a href="https://github.com/takkii/json-server/tree/main/wiki">here</a>.</p></h3>
   <hr />
